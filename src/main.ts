@@ -1,5 +1,11 @@
+import express from "express";
+
 const main = async () => {
-    console.log('Hello, World!');
-}
+  const app = express();
+
+  app.use(express.json());
+
+  app.get("/", (req, res) => {});
+};
 
 main();
